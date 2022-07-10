@@ -26,6 +26,7 @@ Partial Class Form1
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -34,7 +35,7 @@ Partial Class Form1
         Me.btnsearch.BackColor = System.Drawing.Color.Goldenrod
         Me.btnsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnsearch.Location = New System.Drawing.Point(160, 307)
+        Me.btnsearch.Location = New System.Drawing.Point(154, 334)
         Me.btnsearch.Name = "btnsearch"
         Me.btnsearch.Size = New System.Drawing.Size(194, 47)
         Me.btnsearch.TabIndex = 2
@@ -44,7 +45,7 @@ Partial Class Form1
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(33, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(27, 39)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 25
         Me.DataGridView1.Size = New System.Drawing.Size(440, 289)
@@ -57,22 +58,34 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(234, 357)
+        Me.Label1.Location = New System.Drawing.Point(228, 384)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(41, 15)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Label1"
         Me.Label1.Visible = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(164, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(136, 15)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Contact Tracing Viewer"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(510, 406)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnsearch)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -83,4 +96,5 @@ Partial Class Form1
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class

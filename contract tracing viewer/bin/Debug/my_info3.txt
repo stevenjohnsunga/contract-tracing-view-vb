@@ -1,0 +1,3 @@
+john | yes covid | male | 65
+angel | no covid | female | 55
+liza | yes covid | female | 25
