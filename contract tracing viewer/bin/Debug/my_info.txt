@@ -1,0 +1,3 @@
+steven john sunga | no covid | male  | 23
+goliath           | yes covid| male  | 35
+princess          | no covid | female| 27
